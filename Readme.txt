@@ -1,0 +1,8 @@
+Primeira função:
+Essa função recebe dois parâmetros do tipo Date: data1 e data2. Eu uso o operador ">" para comparar as datas. Se data1 for posterior a data2, a função retorna data1; caso contrário, retorna data2. É importante entender que, em JavaScript, comparar datas significa comparar os carimbos de data e hora, que representam os milissegundos desde 1º de janeiro de 1970.
+
+Segunda função:
+Esta função recebe dois parâmetros do tipo Date: dataInicio e dataFim. Primeiro, verifico se dataInicio é anterior a dataFim. Se não for, a função gera um erro. Em seguida, calculo a diferença entre as datas em milissegundos usando dataFim.getTime() - dataInicio.getTime(). Para expressar essa diferença em outras unidades de tempo (segundos, minutos, horas e dias), realizo operações de divisão e módulo. Por fim, retorno um objeto com as propriedades dias, horas, minutos e segundos, cada uma representando a diferença entre as datas em sua unidade correspondente.
+
+Terceira função:
+Nesta função, obtenho a data atual usando new Date(). Em seguida, formato as horas, minutos, dia, mês e ano para que tenham dois dígitos, preenchendo com zeros à esquerda, se necessário. Utilizo o método toString() para converter os valores numéricos em strings. O método padStart() é empregado para adicionar zeros à esquerda às strings de horas, minutos, dia e mês, quando necessário. A contagem do mês é ajustada de 0 a 11 para 1 a 12, pois o objeto Date considera janeiro como mês 0. Por último, uno as strings formatadas para obter o formato desejado: hora:minuto - dia/mês/ano.
